@@ -1,0 +1,1 @@
+proyecto_apnea_v06\startup_stm32f407xx.o: startup_stm32f407xx.s

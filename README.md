@@ -1,0 +1,1 @@
+En el presente repositorio se observa el conjunto de hojas que continen los algoritmos para el desarrollo embebido del dispositivo detector de apneas
