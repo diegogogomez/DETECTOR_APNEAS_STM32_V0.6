@@ -5,6 +5,8 @@
 "proyecto_apnea_v06\main.o"
 "proyecto_apnea_v06\setup_perifericos.o"
 "proyecto_apnea_v06\recepcion_serial.o"
+"proyecto_apnea_v06\interrupcion_periodica.o"
+"proyecto_apnea_v06\transmision_serial.o"
 "proyecto_apnea_v06\stm32f4xx_hal_rcc_ex.o"
 "proyecto_apnea_v06\stm32f4xx_hal_tim_ex.o"
 "proyecto_apnea_v06\stm32f4xx_hal_uart.o"

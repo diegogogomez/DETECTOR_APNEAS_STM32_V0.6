@@ -99,7 +99,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DB854AD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DB854AD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DB854AD)
 I (../Inc/stm32f4xx_it.h)(0x5E330E50)
-F (../Src/main.c)(0x5E33529A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\main.o --omf_browse proyecto_apnea_v06\main.crf --depend proyecto_apnea_v06\main.d)
+F (../Src/main.c)(0x5E344B09)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\main.o --omf_browse proyecto_apnea_v06\main.crf --depend proyecto_apnea_v06\main.d)
 I (../Inc/main.h)(0x5E330E51)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DB854AC)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E330E51)
@@ -132,8 +132,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5DB854AC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DB854AD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DB854AD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DB854AD)
-I (..\MDK-ARM\setup_perifericos.h)(0x5E333D41)
-F (.\setup_perifericos.c)(0x5E334191)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\setup_perifericos.o --omf_browse proyecto_apnea_v06\setup_perifericos.crf --depend proyecto_apnea_v06\setup_perifericos.d)
+I (..\MDK-ARM\setup_perifericos.h)(0x5E344053)
+I (..\MDK-ARM\recepcion_serial.h)(0x5E333D33)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F920C)
+F (.\setup_perifericos.c)(0x5E3443DE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\setup_perifericos.o --omf_browse proyecto_apnea_v06\setup_perifericos.crf --depend proyecto_apnea_v06\setup_perifericos.d)
 I (../Inc/main.h)(0x5E330E51)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DB854AC)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E330E51)
@@ -166,9 +168,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5DB854AC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DB854AD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DB854AD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DB854AD)
-I (setup_perifericos.h)(0x5E333D41)
-F (.\setup_perifericos.h)(0x5E333D41)()
-F (.\recepcion_serial.c)(0x5E33558B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\recepcion_serial.o --omf_browse proyecto_apnea_v06\recepcion_serial.crf --depend proyecto_apnea_v06\recepcion_serial.d)
+I (setup_perifericos.h)(0x5E344053)
+F (.\recepcion_serial.c)(0x5E343EFD)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\recepcion_serial.o --omf_browse proyecto_apnea_v06\recepcion_serial.crf --depend proyecto_apnea_v06\recepcion_serial.d)
 I (../Inc/main.h)(0x5E330E51)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DB854AC)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E330E51)
@@ -204,7 +205,74 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DB854AD)
 I (recepcion_serial.h)(0x5E333D33)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F920C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F920C)
-F (.\recepcion_serial.h)(0x5E333D33)()
+F (.\interrupcion_periodica.c)(0x5E3444FD)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\interrupcion_periodica.o --omf_browse proyecto_apnea_v06\interrupcion_periodica.crf --depend proyecto_apnea_v06\interrupcion_periodica.d)
+I (interrupcion_periodica.h)(0x5E344220)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DB854AC)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5E330E51)
+I (../Inc/main.h)(0x5E330E51)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5DB854AC)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5DB8546A)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5DB85469)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5DB854AB)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5DB8546A)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5DB854AC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F920C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DB854AD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DB854AD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DB854AD)
+F (.\transmision_serial.c)(0x5E344804)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\transmision_serial.o --omf_browse proyecto_apnea_v06\transmision_serial.crf --depend proyecto_apnea_v06\transmision_serial.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DB854AC)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5E330E51)
+I (../Inc/main.h)(0x5E330E51)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5DB854AC)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5DB8546A)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5DB85469)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5DB854AB)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F920E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5DB854AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5DB8546A)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5DB854AC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F920C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5DB854AC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DB854AD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DB854AD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DB854AD)
+I (transmision_serial.h)(0x5E34446A)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5DB854B0)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\MDK-ARM --C99-I.\RTE\_proyecto_apnea_v06-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o proyecto_apnea_v06\stm32f4xx_hal_rcc_ex.o --omf_browse proyecto_apnea_v06\stm32f4xx_hal_rcc_ex.crf --depend proyecto_apnea_v06\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DB854AC)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E330E51)

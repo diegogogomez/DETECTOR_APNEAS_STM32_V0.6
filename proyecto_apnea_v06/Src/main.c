@@ -2,9 +2,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f4xx_hal.h"
-
-
 #include "setup_perifericos.h"
+#include "recepcion_serial.h"
+#include <string.h>
+#include <stdio.h>
 
 
 /* Private variables ---------------------------------------------------------*/
@@ -17,6 +18,12 @@ UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart3;
 
 extern char dato1;
+uint16_t estado_de_muestreo = 0;
+uint16_t contador_de_transmision = 0;
+char envio[50];
+extern int primer_dato_entero;
+extern int segundo_dato_entero;
+extern int tercer_dato_entero;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -27,11 +34,16 @@ static void MX_USART3_UART_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM5_Init(void);
 
-
-
-
 int main(void)
 {
+	char inicio = '[';
+	char fin = ']';
+	char coma = ',';
+	char salto = '\n';
+	char string_red[10];
+	char string_ir[10];
+	char string_sat[10];
+	
   HAL_Init();
 
   SystemClock_Config();
@@ -56,11 +68,39 @@ int main(void)
 			}
 			else{}
 		}
-		HAL_GPIO_WritePin(GPIOD,GPIO_PIN_15,GPIO_PIN_SET);
 		setup_uart3();
+		setup_timer2();
+		HAL_GPIO_WritePin(GPIOD,GPIO_PIN_15,GPIO_PIN_SET);
 		HAL_UART_Receive_IT(&huart3, (uint8_t *)&dato1, 1);				//permite la recepción de datos con interrupción
+		
 		while(1){
-			HAL_Delay(50);
+			if(estado_de_muestreo == 1){
+				estado_de_muestreo = 0;
+				
+				if(contador_de_transmision >= 10){
+					
+					sprintf(string_red, "%d", primer_dato_entero);
+					sprintf(string_ir, "%d", segundo_dato_entero);
+					sprintf(string_sat, "%d", tercer_dato_entero);
+					strcpy (envio,&inicio);
+					strcat (envio,string_red);
+					strcat (envio,&coma);
+					strcat (envio,string_ir);
+					strcat (envio,&coma);
+					strcat (envio,string_sat);
+					strcat (envio,&fin);
+					strcat (envio,&salto);
+					
+					
+					
+					HAL_UART_Transmit_IT(&huart3, (uint8_t *)envio, strlen(envio));
+					contador_de_transmision = 0;
+				}
+				
+				contador_de_transmision++;
+			}
+			
+			
 		}
 
   }

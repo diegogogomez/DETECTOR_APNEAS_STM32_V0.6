@@ -6,11 +6,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char rxData1[70];
-char rxData2[70];
-char dato1;
-uint8_t index1 = 0;
-uint8_t dato = 0;
+char rxData1[70];													//arreglo que sirve como canal para los datos del sensor de saturacion
+char rxData2[70];													//arreglo que almacena los datos recibidos por el sensor de saturacion
+char dato1;																//cursor que llena los arreglos
+uint8_t index1 = 0;												//indice para arreglos rxdata1 y rxdata2
+uint8_t dato = 0;				
 uint16_t coma = 0;
 
 char primer_dato[25];
@@ -18,9 +18,7 @@ int primer_dato_entero = 0;
 char segundo_dato[25];
 int segundo_dato_entero = 0;
 char tercer_dato[25];
-char cuarto_dato[25];
-char quinto_dato[25];
-char sexto_dato[25];
+int tercer_dato_entero = 0;
 
 
 extern UART_HandleTypeDef huart4;
@@ -46,9 +44,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 				memset(primer_dato, 0, sizeof(primer_dato));					///limpia arreglo val_contador
 				memset(segundo_dato, 0, sizeof(segundo_dato));
 				memset(tercer_dato, 0, sizeof(tercer_dato));
-				memset(cuarto_dato, 0, sizeof(cuarto_dato));
-				memset(quinto_dato, 0, sizeof(quinto_dato));
-				memset(sexto_dato, 0, sizeof(sexto_dato));
 			
 			dato = 0;
 			coma = 0;
@@ -60,13 +55,17 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 				if(dato == 0 && rxData2[j] != '['){
 					primer_dato[j-1] = rxData2[j];
 				}
-				else if(dato == 1 && ((rxData2[j] != ',' || rxData2[j] != ' ' || rxData2[j] != ']'))){
+				else if(dato == 1 && (rxData2[j] != ',' || rxData2[j] != ' ' || rxData2[j] != ']')){
 					segundo_dato[j-coma] = rxData2[j];
+				}
+				else if(dato == 2 && (rxData2[j] != ',' || rxData2[j] != ']')){
+					tercer_dato[j-coma] = rxData2[j];
 				}
 				
 			}
 			primer_dato_entero = atoi(primer_dato);
 			segundo_dato_entero = atoi(segundo_dato);
+			tercer_dato_entero = atoi(tercer_dato);
 			
 			index1 = 0;
 		}

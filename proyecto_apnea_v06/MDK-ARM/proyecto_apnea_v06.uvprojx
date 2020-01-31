@@ -390,9 +390,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>::CMSIS</GroupName>
-        </Group>
-        <Group>
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
@@ -416,19 +413,19 @@
               <FilePath>.\setup_perifericos.c</FilePath>
             </File>
             <File>
-              <FileName>setup_perifericos.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\setup_perifericos.h</FilePath>
-            </File>
-            <File>
               <FileName>recepcion_serial.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\recepcion_serial.c</FilePath>
             </File>
             <File>
-              <FileName>recepcion_serial.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\recepcion_serial.h</FilePath>
+              <FileName>interrupcion_periodica.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\interrupcion_periodica.c</FilePath>
+            </File>
+            <File>
+              <FileName>transmision_serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\transmision_serial.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -531,6 +528,9 @@
               <FilePath>startup_stm32f407xx.s</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>
